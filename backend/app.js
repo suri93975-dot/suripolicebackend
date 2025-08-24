@@ -65,6 +65,8 @@ const allowedOrigins = [
   "http://localhost:5173",
   "https://suri.policecoop.in",  // ← Fixed: removed trailing space
   "http://suri.policecoop.in",
+  "https://suri.systempoint.in",
+  "http://suri.systempoint.in"
 ];
 
 // CORS config
@@ -97,5 +99,6 @@ app.use("/api/v1", publicRoute);
 app.get("/", (req, res) => {
   res.json({ message: "Backend server running 🚀" });
 });
+
 
 module.exports = app;
