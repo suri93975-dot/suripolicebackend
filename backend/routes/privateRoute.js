@@ -47,7 +47,7 @@ router.route("/images").get(getAllGalleryImages);
 
 //pdf
 router.route("/addPdf").post(isAuthenticatedUser,uploadPdf.single("pdfFile"), addPdf);
-router.route("/deletePdf/:id").delete(isAuthenticatedUser,deletePdf);
+router.route("/deletePdf/:id").delete(deletePdf);
 
 //sms
 router.route("/sendSms").post(sendWhatsappMessage);
@@ -77,3 +77,4 @@ router.route("/trackVisitor").post(trackVisit)
 router.route("/getVisitor").get(getVisitStats)
 router.route("/totalVisitCount").get(getTotalVisitorCount)
 module.exports = router;
+
