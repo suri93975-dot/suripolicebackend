@@ -67,6 +67,7 @@ const allowedOrigins = [
   "http://suri.policecoop.in",
   "https://birbhum.policecoop.in",
   "http://birbhum.policecoop.in",
+  "https://birbhum.policecoop.in/",
 ];
 
 // CORS config
@@ -102,5 +103,6 @@ app.get("/", (req, res) => {
 
 
 module.exports = app;
+
 
 
